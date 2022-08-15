@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@media screen and (min-width: 800px) {
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+body{
+    font-weight: bold;
+    font-family: "montserrat";
+    background-color: lightblue;
+}
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "montserrat";
+    color: black;
+    margin-top: 20px;
+    margin-left: 50px;
+   
+}
+.cabecalho{
+display: flex;
+column-gap: 50px;
+background-color: white;
+}
+.opcoes{
+    display: flex;
+    column-gap: 120px;
+    margin-left: 40px;
+    font-size: 10px;
+    margin-top: 15px;
+}
+.buscar{
+    border-radius: 7px;
+    width: 400px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.titulo{
+   color: white;
+   font-size: 50px;
+}
+.divtext{
+   text-align: center;
+   justify-content: center;
+   margin-top: 50px;
+}
+.mainmenubtn{
+    display: none;
+}
+}
