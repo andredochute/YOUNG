@@ -2,6 +2,15 @@ a{
     text-decoration: none;
     color: black;
 }
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-weight: bold;
+    font-family: "montserrat";
+    background-color: lightblue;
+}
 
 @media screen and (max-width: 800px) {
 
@@ -9,11 +18,10 @@ a{
         text-decoration: none;
         color: black;
     }
-    body{
-        font-weight: bold;
-        font-family: "montserrat";
-        background-color: lightblue;
-    }
+.navegar{
+    display: flex;
+}
+
     .logo{
         font-weight: bold;
         font-size: 20px;
@@ -49,38 +57,22 @@ a{
        justify-content: center;
        margin-top: 30px;
     }
-    .mainmenubtn {
-        background-color: skyblue;
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding:10px;
-        margin-top:10px;
-    }
-    .mainmenubtn:hover {
-        background-color: black;
-        color: white;
-        }
-        .for:hover{
-            background-color: black;
-        color: white; 
-        }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    .dropdown-child {
+    .opcoes{
         display: none;
-        background-color: skyblue;
-        min-width: 200px;
     }
-    .dropdown-child a {
-        color: blue;
-        padding: 20px;
-        text-decoration: none;
-        display: block;
+    #menu{
+        background-color: aqua;
     }
-    .dropdown:hover .dropdown-child {
+    #navegar{
+        width: 28px;
+        height: 25px;
+    }
+    #lista{
+        display: none;
+    }
+    #nav.active #lista{
         display: block;
+        height: calc(80vh - 50%);
+        width: calc(80vh - 100%);
     }
 }

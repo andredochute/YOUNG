@@ -13,7 +13,7 @@ body{
 }
 .logo{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.4vw;
     font-family: "montserrat";
     color: black;
     margin-top: 20px;
@@ -22,13 +22,13 @@ body{
 }
 .cabecalho{
 display: flex;
-column-gap: 50px;
+column-gap: 3vw;
 background-color: white;
 }
 .opcoes{
     display: flex;
-    column-gap: 120px;
-    margin-left: 40px;
+    column-gap: 5vw;
+    margin-left: 5vw;
     font-size: 10px;
     margin-top: 15px;
 }
@@ -51,4 +51,11 @@ background-color: white;
 .mainmenubtn{
     display: none;
 }
+#navegar{
+    display: none;
+}
+#nav{
+    display: none;
+}
+
 }
