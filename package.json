@@ -1,9 +1,26 @@
 {
+  "name": "andre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andredochute/YOUNG.git"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "mysql2": "^2.3.3",
     "sequelize": "^6.21.6"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/andredochute/YOUNG/issues"
+  },
+  "homepage": "https://github.com/andredochute/YOUNG#readme"
 }

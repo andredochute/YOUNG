@@ -16,17 +16,24 @@ body{
     margin-left: 50px;
    
 }
+.container{
+    margin: 0;
+    border: 0;
+    max-width: 100%;
+    margin-top: 20px;
+}
 .cabecalho{
 display: flex;
-column-gap: 3vw;
 background-color: white;
+max-width: 100%;
+column-gap: 5vw;
 }
 .opcoes{
     display: flex;
     column-gap: 5vw;
     margin-left: 5vw;
     font-size: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .buscar{
     border-radius: 7px;

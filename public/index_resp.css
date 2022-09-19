@@ -3,8 +3,8 @@ a{
     color: black;
 }
 ul{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-weight: bold;
@@ -34,7 +34,7 @@ body{
     .cabecalho{
     display: flex;
     align-items: center;
-    height: 50px;
+
     column-gap: 50px;
     background-color: white;
     }
