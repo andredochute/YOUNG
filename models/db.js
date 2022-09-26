@@ -4,7 +4,7 @@ const sequelize = new Sequelize('bd_loja','root','',{
     dialect: 'mysql',
     define: {
         charset: 'utf8',
-        collate: 'utf8_general_cli',
+        collate: 'utf8_general_ci',
         timestamps: true
     },
     logging: false
@@ -17,3 +17,5 @@ sequelize.authenticate().then(function(){
     console.log('Falha ao se conectar:'+err);
 
 })
+
+module.exports= {Sequelize, sequelize}

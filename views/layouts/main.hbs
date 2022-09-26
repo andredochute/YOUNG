@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        
+
     <title>Young kids</title>
     <link href="style.css" rel="stylesheet">
     <link href="index_resp.css" rel="stylesheet">
@@ -17,55 +17,37 @@
 <body>
     <div class="container">
         <div class="cabecalho">
-
+            <img id="open" src="img/menu.svg" onclick="Aparecer()">
+            <img id="close" src="img/icon.png" onclick="Aparecer()">
             <div id="logo">YONG KIDS ©</div>
-
-            <div id="menu">
-     
-                <img id="navegar" src="img/menu.png">
-                <div id="menu_lista">
-                    <nav id="nav">
-                    
-                        <img id="navegar2" src="img/icon.png">
-                        <h1 id="logo_respo">YONG KIDS ©</h1>
-
-
-                        <ul id="lista"  style="list-style: none;">
-                            <li>
-                                <h1>Entrar</h1>
-                            </li>
-                            <li>
-                                <h1>Masculino</h1>
-                            </li>
-                            <li>
-                                <h1>Infatil</h1>
-                            </li>
-                            <li>
-                                <h1>Feminino</h1>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
 
             <div class="formulario"><input class="buscar" type="text" name="nome" value="" placeholder="Buscar" /></div>
 
-
-            <div class="opcoes">
+            <div id="opcoes" style="display: none;">
                 <a href="cad_users">
                     <h3 class="for">Entrar</h3>
                 </a>
-                
-                
+
                 <a href="exibir_users">
-                <h3 class="for">Ver mais</h3>
+                    <h3 class="for">Ver mais</h3>
+                </a>
+                </div>
+
+
+            <div id="opcoes2">
+                <a href="cad_users">
+                    <h3 class="for">Entrar</h3>
+                </a>
+
+                <a href="exibir_users">
+                    <h3 class="for">Ver mais</h3>
                 </a>
             </div>
         </div>
     </div>
     </div>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     {{{body}}}
 </body>
 

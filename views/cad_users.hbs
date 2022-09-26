@@ -2,15 +2,23 @@
 
 <form action="/insert_user" method="POST" class="my-3">Formulário
         <!-- Início do Formulário -->
+
+            <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Nome</label>
+            <input name="nome" type="nome" class="form-control" id="exampleFormControlInput1" placeholder="nome">
+        </div>
+
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Endereço de E-mail</label>
             <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
 
         <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-            <textarea name="mensagem" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="exampleFormControlTextarea1" class="form-label">Senha</label>
+            <input name="senha" type="senha" class="form-control" id="exampleFormControlInput1" placeholder="senha">
         </div>
+
+
         <button type="submit">Adiciona</button><button type="reset"> Limpar</button>
         <!-- Fim do Formulário -->
         </form>

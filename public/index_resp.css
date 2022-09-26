@@ -38,13 +38,16 @@ body{
     column-gap: 50px;
     background-color: white;
     }
-    .opcoes{
-        display: flex;
-        flex-direction: column;
-        margin-left: 40px;
-        font-size: 10px;
-        margin-top: 15px;
-        color: black;
+    #opcoes{
+        display: none;
+        position: absolute;
+        background-color: black;
+        margin-top: 50px;
+        width: 50%;
+        
+    }
+    #opcoes h3{
+        color: lightblue;
     }
 
     .titulo{
@@ -54,93 +57,12 @@ body{
     .formulario{
         display: none;
     }
-    .divtext{
-       text-align: center;
-       justify-content: center;
-       margin-top: 30px;
-    }
-    .opcoes{
+    #close{
         display: none;
     }
-    #menu{
-        position: absolute;
-        margin-top: 10px;
-        margin-left: 8px;
-        
-    }
-    #navegar{
-        width: 28px;
-        height: 25px;
-        transition: 900ms;
-    }
-    #lista{
-        display: none;
-        color: white;
-        transition: 900ms;
-        
-    }
-
-    #nav.active #lista{
-        display: block;
-        transition: 900ms;
- 
-    }
-
-    #nav.active #navegar2{
-        display: block;
-        transition: 900ms;
-    }
-    #nav.active #logo_respo{
-        display: block;
-    }
-   
-    #nav{
-        transition: 900ms;
-    }
-    #menu_lista{
-        background-color: black;      
-        position: absolute;
-        width: 200px;
-
-        margin-top: -50px;
-        margin-left: -16px;
-    
-    }
-    #lista{
-        margin-top: 70px;
-        margin-left: 30px;
-        height: 500px;
-    }
-    #navegar2{
-        margin-top: -50px;
-        position: absolute;
-        margin-left: 30px;
+    #opcoes2{
         display: none;
     }
-    img:hover{
-        transform: scale(1.3); 
-        transition: 500ms;
-    }
-    #logo_respo{
-        display: none;
-        font-size: 15px;
-        position: absolute;
-        margin-left: 60px;
-        margin-top: -52px;
-        color: white;
-    }
-    #logo_respo:hover{
-        transform: scale(1.06); 
-        transition: 500ms;
-    }
-    li{
-        transition: 500ms;
-    }
-    li:hover{
-        transform: scale(1.06); 
-        transition: 500ms;
-    }
 
-  
     
 }
