@@ -59,6 +59,35 @@ app.post('/insert_user', async (req,res)=>{
     })
   
 })
+app.post('/editar_users', (req,res)=>{
+    var id = req.body.id;
+    Usuario.findByPk(id).then((dados)=>{
+        return res.render('editar_users', {error:false, id: dados.id, nome: dados.nome, email:dados.email, senha: dados.senha});
+    }).catch((err)=>{
+        console.log(err);
+        return res.render('editar_users', {error:true, problema: 'Não é possivel editar este registro'});
+    })
+})
+app.post('/update_users', (req,res)=>{
+    var nome = req.body.nome;
+    var email = req.body.email;
+    var senha = req.body.senha;
+
+    Usuario.update(
+        {
+            nome:nome,
+            email:email.toLowerCase(),
+            senha:senha,
+        },
+        { where:{
+                id: req.body.id}
+        }).then((resultado)=>{
+            console.log(resultado);
+            return res.redirect('/exibir_users');
+        }).catch((err)=>{
+            console.log(err);
+        })
+})
 
 app.listen(PORT, () => {
     console.log("Servidor rodando em localhost:" + PORT)
