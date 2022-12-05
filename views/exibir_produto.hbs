@@ -1,32 +1,33 @@
 <div class="p-5 rounded mt-3">
-  <h1>Lista Usuários</h1>
+  <h1>Lista de Produto</h1>
   {{#if table}}
   <table class="table table-striped">
     <thead>
       <tr>
         <th scope="col">#ID</th>
         <th scope="col">Nome</th>
-        <th scope="col">E-mail</th>
-        <th scope="col">Ações</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Imagen</th>
       </tr>
     </thead>
     <tbody>
-      {{#each usuarios}}
+      {{#each produtos}}
       <tr>
         <th scope="row">{{id}}</th>
+         <td><img src="{{img}}" class="img-thumb"></td>
         <td>{{nome}}</td>
-        <td>{{email}}</td>
+        <td>{{preco}}</td>
         <td>
           <div class="row g-1">
             <div class="col-6 col-md-3">
-              <form action="/editar_users" method="post">
+              <form action="/editar_produto" method="post">
               <input type="hidden" name="id" value="{{id}}">
               <button class="w-100 btn btn-info">Editar</button>
               </form>
             </div>
 
              <div class="col-6 col-md-3 mx-1">
-                <form action="/delete_users" method="post">
+                <form action="/delete_produto" method="post">
                  <input type="hidden" name="id" value="{{id}}">
               <button class="btn btn-danger">Deletar</button>
           </div>
