@@ -1,20 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 @media screen and (min-width: 800px) {
-
 body{
     font-weight: bold;
     font-family: "montserrat";
     background-color: lightblue;
-}
-#logo{
-    font-weight: bold;
-    font-size: 1.4vw;
-    font-family: "montserrat";
-    color: black;
-    margin-top: 20px;
-    margin-left: 50px;
-   
 }
 .container{
     margin: 0;
@@ -23,24 +13,48 @@ body{
     margin-top: 20px;
 }
 .cabecalho{
-display: flex;
-background-color: white;
-max-width: 100%;
-column-gap: 5vw;
-}
-#opcoes2{
     display: flex;
-    column-gap: 5vw;
-    margin-left: 5vw;
-    font-size: 10px;
-    margin-top: 10px;
+    align-items: center;
+    padding: 12px;
+    column-gap: 25px;
+    background-color: white;
+}
+#logo{
+    font-weight: bold;
+    align-items: center;
+    font-family: "montserrat";
+    color: black;
+}
+.young_kids{
+    font-weight: bold;
+    font-family: "montserrat";
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
 }
 .buscar{
+    display: flex;
+    align-items: center;
     border-radius: 7px;
     width: 400px;
     height: 25px;
-    margin-top: 20px;
-    margin-left: 50px;
+}
+#opcoes2{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    font-size: 10px;
+}
+.for{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
 }
 .titulo{
    color: white;
@@ -51,6 +65,15 @@ column-gap: 5vw;
 }
 #close{
     display: none;
+}.body{
+    display: flex;
+    padding: 15px 0px 0px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin-top: 5px;
 }
 
 }

@@ -3,6 +3,7 @@ const app = express();
 const hbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const Usuario = require('./models/Usuario');
+const Produto = require('./models/Produto');
 const PORT = process.env.PORT || 3000;
 
 //configuracao do handleBars

@@ -1,42 +1,33 @@
-<div class="p-5 rounded mt-3">
-  <h1>Lista de Produto</h1>
-  {{#if table}}
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th scope="col">#ID</th>
-        <th scope="col">Nome</th>
-        <th scope="col">Preço</th>
-        <th scope="col">Imagen</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each produtos}}
-      <tr>
-        <th scope="row">{{id}}</th>
-         <td><img src="{{img}}" class="img-thumb"></td>
-        <td>{{nome}}</td>
-        <td>{{preco}}</td>
-        <td>
+<div class="body">
+  <h1>Lista de Produtos</h1>
+  {{#if lista}}
+
+       {{#each produtos}}
+       <div class="card" style="width: 18rem;">
+         <img class="card-img-top" src="{{img}}">
+          <div class="card-body">
+        <h5 class="card-title">{{nome}}</h5>
+        <p class="card-text">{{id}}</p>
+        <p class="card-text">{{preco}}</p>
+
           <div class="row g-1">
-            <div class="col-6 col-md-3">
+            <div class="">
               <form action="/editar_produto" method="post">
               <input type="hidden" name="id" value="{{id}}">
-              <button class="w-100 btn btn-info">Editar</button>
+              <button class="w-150 btn btn-info ">Editar</button>
               </form>
             </div>
-
-             <div class="col-6 col-md-3 mx-1">
+            <div class="">
                 <form action="/delete_produto" method="post">
                  <input type="hidden" name="id" value="{{id}}">
-              <button class="btn btn-danger">Deletar</button>
+              <button class="w-150 btn btn-danger">Deletar</button>
+              </form>
+            </div>
           </div>
-          
-        </td>
-      </tr>
+           </div>
+</div>
       {{/each}}
-    </tbody>
-  </table>
+ 
   {{else}}
   <div class="card mt-4">
     <div class="card-body">
